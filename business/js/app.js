@@ -37,3 +37,11 @@ app.onPageInit('business-11', () => {
   })
   app.messagebar('.messagebar')
 })
+
+app.onPageInit('business-25', () => {
+  app.swiper('.swiper-2', {
+    pagination: '.swiper-2 .swiper-pagination',
+    spaceBetween: 20,
+    slidesPerView: 2
+  })
+})
