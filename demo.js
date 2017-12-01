@@ -1,7 +1,7 @@
 const bs = require('browser-sync').create()
 const Static = require('node-static')
 const file1 = new Static.Server('./customer')
-const file2 = new Static.Server('./customer')
+const file2 = new Static.Server('./business')
 const http = require('http')
 
 http.createServer(function (request, response) {
