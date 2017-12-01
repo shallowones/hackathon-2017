@@ -45,3 +45,11 @@ app.onPageInit('business-25', () => {
     slidesPerView: 2
   })
 })
+
+app.onPageInit('business-28', () => {
+  app.swiper('.swiper-2', {
+    pagination: '.swiper-2 .swiper-pagination',
+    spaceBetween: 20,
+    slidesPerView: 2
+  })
+})
