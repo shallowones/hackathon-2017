@@ -1,16 +1,28 @@
 const $ = Dom7
 const app = new Framework7({
   modalTitle: 'Framework7',
-  material: true
+  material: true,
+  pushState: true
 })
 const view = app.addView('.view-main', {})
 
 $(document).on('ajaxStart', () => app.showIndicator())
 $(document).on('ajaxComplete', () => app.hideIndicator())
 
-addEventListener('message', (e) => {
-  const { data } = e
-  console.log(data)
+app.onPageInit('business-17', () => {
+  app.swiper('.swiper-2', {
+    pagination:'.swiper-2 .swiper-pagination',
+    spaceBetween: 20,
+    slidesPerView: 2
+  });
 
-  view.router.loadPage('about.html')
-}, false)
+  app.calendar({
+    input: '#calendar-default',
+    value: [new Date()],
+    dateFormat: 'dd.mm.yyyy'
+  });
+})
+
+app.onPageInit('business-20', () => {
+
+})

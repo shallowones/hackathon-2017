@@ -305,3 +305,6 @@ code {
   background: #f3f3f3;
   padding: 5px;
 }
+.swiper-2 img {
+  width: 100%;
+}
