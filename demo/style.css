@@ -1,0 +1,30 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  height: 200px;
+  background: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 49%;
+}

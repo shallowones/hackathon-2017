@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <style>
-    html, body {
-      height: 100%;
-    }
-
-    body {
-      margin: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div style="display: flex; flex-direction: column; height: 100%;">
-  <div style="height: 200px; background: red;">
-
+<div class="page">
+  <div class="header">
+    <div class="item">
+      <button class="button button-iframe-left" value="customer-1.html">1</button>
+      <button class="button button-iframe-left" value="">2</button>
+      <button class="button button-iframe-left" value="">3</button>
+      <button class="button button-iframe-left" value="">4</button>
+      <button class="button button-iframe-left" value="">5</button>
+    </div>
+    <div class="item">
+      <button class="button button-iframe-right" value="customer-1.html">1</button>
+      <button class="button button-iframe-right" value="">2</button>
+      <button class="button button-iframe-right" value="">3</button>
+      <button class="button button-iframe-right" value="">4</button>
+      <button class="button button-iframe-right" value="">5</button>
+    </div>
   </div>
-  <div style="flex: 1; display: flex; justify-content: space-between;">
-    <iframe src="http://localhost:8081/index.html" frameborder="0" width="49%" height="100%"></iframe>
-    <iframe src="http://localhost:8082/index.html" frameborder="0" width="49%" height="100%"></iframe>
+  <div class="body">
+    <iframe src="http://localhost:8081/index.html" frameborder="0" height="100%" class="item iframe-left"></iframe>
+    <iframe src="http://localhost:8082/index.html" frameborder="0" height="100%" class="item iframe-right"></iframe>
   </div>
 </div>
+<script src="app.js"></script>
 </body>
 </html>
