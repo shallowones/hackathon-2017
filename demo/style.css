@@ -142,3 +142,8 @@ body {
   background: rgba(255, 255, 255, .5);
   transition-duration: .3s;
 }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  filter: grayscale(100%);
+}

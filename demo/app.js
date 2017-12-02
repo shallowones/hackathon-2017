@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         button.classList.add('active')
 
+        iframeRight.parentNode.classList.add('overlay')
+        iframeLeft.parentNode.classList.remove('overlay')
+
         e.preventDefault()
       }, false)
     }
@@ -43,6 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
           b.classList.remove('active')
         }
         button.classList.add('active')
+
+        iframeLeft.parentNode.classList.add('overlay')
+        iframeRight.parentNode.classList.remove('overlay')
 
         e.preventDefault()
       }, false)
