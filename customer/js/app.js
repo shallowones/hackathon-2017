@@ -1,7 +1,8 @@
 const $ = Dom7
 const app = new Framework7({
   modalTitle: 'Framework7',
-  material: true
+  material: true,
+  pushState: true
 })
 const view = app.addView('.view-main', {})
 
@@ -10,11 +11,10 @@ $(document).on('ajaxComplete', () => app.hideIndicator())
 
 $(document).on('pageInit', () => {
 
-  /*app.calendar({
-    input: '.datepicker-range',
-    rangePicker: true,
-    //dateFormat: 'H:i'
-    date: false
-  })*/
+  app.swiper('.swiper-2', {
+    pagination: '.swiper-2 .swiper-pagination',
+    spaceBetween: 20,
+    slidesPerView: 2
+  })
 
 })
