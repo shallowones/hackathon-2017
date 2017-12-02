@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
           action: value
         }, '*')
 
+        for (let b of leftButtons) {
+          b.classList.remove('active')
+        }
+        button.classList.add('active')
+
         e.preventDefault()
       }, false)
     }
@@ -33,6 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
           type: 'page',
           action: value
         }, '*')
+
+        for (let b of rightButtons) {
+          b.classList.remove('active')
+        }
+        button.classList.add('active')
 
         e.preventDefault()
       }, false)

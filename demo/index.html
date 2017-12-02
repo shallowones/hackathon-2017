@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="page">
-  <div class="header">
+  <div class="header" style="align-items: center">
     <div class="item">
       <button class="button button-iframe-left" value="customer-1.html">1</button>
       <button class="button button-iframe-left" value="">2</button>
@@ -15,17 +15,25 @@
       <button class="button button-iframe-left" value="">4</button>
       <button class="button button-iframe-left" value="">5</button>
     </div>
+    <div style="width: 2px; background: rgba(255, 255, 255, .5); height: 80%;"></div>
     <div class="item">
-      <button class="button button-iframe-right" value="customer-1.html">1</button>
-      <button class="button button-iframe-right" value="">2</button>
-      <button class="button button-iframe-right" value="">3</button>
-      <button class="button button-iframe-right" value="">4</button>
-      <button class="button button-iframe-right" value="">5</button>
+      <button class="button button-iframe-right" value="business-2.html">2</button>
+      <button class="button button-iframe-right" value="business-11.html">11</button>
+      <button class="button button-iframe-right" value="business-12.html">12</button>
+      <button class="button button-iframe-right" value="business-15.html">15</button>
+      <button class="button button-iframe-right" value="business-17.html">17</button>
+      <button class="button button-iframe-right" value="business-20.html">20</button>
+      <button class="button button-iframe-right" value="business-21.html">21</button>
+      <button class="button button-iframe-right" value="business-25.html">25</button>
     </div>
   </div>
   <div class="body">
-    <iframe src="http://localhost:8081/index.html" frameborder="0" height="100%" class="item iframe-left"></iframe>
-    <iframe src="http://localhost:8082/index.html" frameborder="0" height="100%" class="item iframe-right"></iframe>
+    <div class="phone phone-android item">
+      <iframe src="http://localhost:8081/index.html" frameborder="0" scrolling="no" class="iframe-left"></iframe>
+    </div>
+    <div class="phone phone-android item">
+      <iframe src="http://localhost:8082/index.html" frameborder="0" scrolling="no" class="iframe-right"></iframe>
+    </div>
   </div>
 </div>
 <script src="app.js"></script>
