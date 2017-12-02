@@ -324,5 +324,5 @@ code {
 }
 
 [data-blick] {
-  animation: blick 1s 2 ease-in-out;
+  animation: blick .5s 2 ease-in-out;
 }
