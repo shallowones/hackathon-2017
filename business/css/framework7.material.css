@@ -1,17 +1,17 @@
 /**
  * Framework7 1.6.5
  * Full featured mobile HTML framework for building iOS & Android apps
- * 
+ *
  * Google Material Theme
  *
  * http://framework7.io/
- * 
+ *
  * Copyright 2017, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
- * 
+ *
  * Licensed under MIT
- * 
+ *
  * Released on: September 7, 2017
  */
 html,
@@ -3309,7 +3309,7 @@ textarea.resizable {
   -ms-appearance: none;
   appearance: none;
   background: none;
-  padding: 0 10px;
+  padding: 0 5px;
   margin: 0;
   height: 36px;
   white-space: nowrap;
@@ -3319,7 +3319,6 @@ textarea.resizable {
   font-family: inherit;
   cursor: pointer;
   min-width: 64px;
-  padding: 0 8px;
   position: relative;
   overflow: hidden;
   outline: 0;
@@ -3395,7 +3394,7 @@ html:not(.watch-active-state) .button-raised:active,
   flex-wrap: nowrap;
 }
 .buttons-row .button {
-  margin-left: 16px;
+  margin-left: 5px;
   width: 100%;
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -4344,11 +4343,10 @@ html.pixel-ratio-3 .card-footer:before {
   -ms-appearance: none;
   appearance: none;
   background: none;
-  padding: 0 10px;
+  padding: 0 5px;
   margin: 0;
   height: 36px;
   white-space: nowrap;
-  text-overflow: ellipsis;
   font-size: 14px;
   text-transform: uppercase;
   font-family: inherit;
