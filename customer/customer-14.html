@@ -1,16 +1,15 @@
 <div data-page="customer-14" class="page">
   <div class="navbar">
     <div class="navbar-inner">
-      <div class="left"><a href="index.html" class="back link icon-only"><i class="icon icon-back"></i></a></div>
       <div class="center">Детальный экран с чатом</div>
-      <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
     </div>
   </div>
   <div class="toolbar messagebar" style="height: 100px;">
     <div class="toolbar-inner" style="flex-wrap: wrap;">
       <textarea placeholder="Сообщение" style="width: 100%;"></textarea>
       <a href="#" class="link" style="background: #f44336; color: #fff;">Отказать</a>
-      <a href="#" class="link" style="background: #4caf50; color: #fff;">Написать</a>
+      <a href="#" class="link js-take" style="background: #4caf50; color: #fff;">Дать номер</a>
+      <a href="#" class="link" style="background: #2196f3; color: #fff;">Написать</a>
     </div>
   </div>
   <div class="page-content messages-content">
@@ -31,7 +30,7 @@
           <li>
             <div class="item-content">
               <div class="item-inner">
-                <div class="item-title">Вы дали свой номер</div>
+                <div class="item-title js-this" style="opacity: 0">Вы дали свой номер</div>
               </div>
             </div>
           </li>

@@ -18,3 +18,12 @@ $(document).on('pageInit', () => {
   })
 
 })
+
+app.onPageInit('customer-14', () => {
+  $('.js-take').on('click', (e) => {
+    e.preventDefault()
+    $('.js-this')
+      .removeAttr('style')
+      .attr('data-blick', true)
+  })
+})

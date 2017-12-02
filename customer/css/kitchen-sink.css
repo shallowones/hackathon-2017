@@ -310,3 +310,19 @@ code {
   height: 100%;
   max-width: 100%;
 }
+
+@keyframes blick {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+[data-blick] {
+  animation: blick 1s 2 ease-in-out;
+}

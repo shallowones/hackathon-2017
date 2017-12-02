@@ -38,6 +38,14 @@ app.onPageInit('business-11', () => {
   app.messagebar('.messagebar')
 })
 
+app.onPageInit('business-12', () => {
+  const text = 'На сколько часов планируете? У нас с 19:00 до 24:00 свободно, оплата за 12 человек 3000 рублей в час.'
+  $('.js-add').on('click', (e) => {
+    e.preventDefault()
+    $(e.currentTarget).parent().find('textarea').val(text)
+  })
+})
+
 app.onPageInit('business-25', () => {
   app.swiper('.swiper-2', {
     pagination: '.swiper-2 .swiper-pagination',
