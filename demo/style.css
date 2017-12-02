@@ -28,8 +28,11 @@ body {
 
 .item {
   width: 49%;
-  height: 100%;
   display: flex;
+}
+
+.header .item {
+  height: 100%;
 }
 
 .iframe-right,
